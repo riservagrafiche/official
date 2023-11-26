@@ -9,3 +9,9 @@ hamburgerMenu.addEventListener('click', () => {
         navbar.attributes[1].value = true
     }
 })
+
+let navbarClose = document.getElementsByClassName('nav-bar__close')[0]
+
+navbarClose.addEventListener('click', () => {
+        navbar.attributes[1].value = true
+})

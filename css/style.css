@@ -68,9 +68,8 @@ nav .nav-bar__hamburger-menu {
     background-color: var(--background-dark-color);   
 }
 
-nav .nav-bar__hamburger span::before,
-nav .nav-bar__hamburger span::after {
-    content: '';
+nav .nav-bar__hamburger span::before {
+    content: 'g';
     width: 38px;
     height: 4px;
     background-color: black;

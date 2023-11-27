@@ -16,6 +16,8 @@ body {
     --secondary-color: #2a76a8;
     --background-color: #f2f3f7;
     --background-dark-color: #eeecec;
+
+    --nav-bar-height: 4rem;
 }
 
 /*      LINK       */
@@ -30,12 +32,14 @@ a:hover {
 }
 
 nav .nav-bar {
+    overflow: hidden;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: var(--background-color);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    height: 3rem;
+    height: var(--nav-bar-height);
 }
 
 nav .nav-bar ul {
@@ -80,13 +84,21 @@ nav .nav-bar .nav-bar__close {
 
     nav .nav-bar {
         position: fixed;
+        justify-content: start;
         align-items: normal;
+        text-align: center;
         right: 0;
         width: 50%;
         height: 100vh;
         z-index: 100;
         transition: all ease-in-out 0.5s;
         padding: 1rem;
+        flex-direction: column;
+    }
+
+    nav .nav-bar__brand {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     nav .nav-bar ul {
